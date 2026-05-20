@@ -200,11 +200,13 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-importer:Open Importer": false
     }
   },
   "active": "9c89ff53eb6111fe",
   "lastOpenFiles": [
+    "Apple Notes",
     "mac_sanity/ObsidianInsanity/Random Note.md",
     "mac_sanity/ObsidianInsanity/Linux/Command Helps/Search Commands.md",
     "mac_sanity/ObsidianInsanity/Hacking Progress.md"
