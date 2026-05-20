@@ -4,43 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "4524e5630632774c",
+        "id": "532f8a7da3744b23",
         "type": "tabs",
-        "dimension": 49.11764705882353,
         "children": [
           {
-            "id": "d9513fb1fb58e0a2",
+            "id": "76dedfda096bf669",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mac_sanity/ObsidianInsanity/Linux/Command Helps/Search Commands.md",
+                "file": "Apple_Notes/C++.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Search Commands"
-            }
-          }
-        ]
-      },
-      {
-        "id": "edccf6cc56b7fe19",
-        "type": "tabs",
-        "dimension": 50.88235294117647,
-        "children": [
-          {
-            "id": "9c89ff53eb6111fe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mac_sanity/ObsidianInsanity/Hacking Progress.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Hacking Progress"
+              "title": "C++"
             }
           }
         ]
@@ -204,11 +182,45 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "9c89ff53eb6111fe",
+  "active": "76dedfda096bf669",
   "lastOpenFiles": [
-    "Apple Notes",
-    "mac_sanity/ObsidianInsanity/Random Note.md",
+    "Apple_Notes/Useful Shit!.md",
+    "Attachments/SCR-20251103-jnzj.png",
+    "Apple_Notes/Machine Learning.md",
+    "Apple_Notes/GO!.md",
+    "Apple_Notes/FOSC.md",
+    "Apple_Notes/Finaning and Stocks..md",
+    "Apple_Notes/Ethical Hacking (From Scratch)!.md",
+    "Apple_Notes/Distributed heat diffusion project!.md",
+    "Apple_Notes/C++.md",
+    "Attachments/SCR-20260129-thjm.png",
+    "Attachments/SCR-20251028-lppl.png",
+    "Attachments/Untitled.base",
+    "Attachments",
+    "Apple_Notes/C.md",
+    "Attachments/unknown.gif",
     "mac_sanity/ObsidianInsanity/Linux/Command Helps/Search Commands.md",
-    "mac_sanity/ObsidianInsanity/Hacking Progress.md"
+    "Attachments/SCR-20251028-meqg.png",
+    "Apple_Notes/SQL.md",
+    "mac_sanity/ObsidianInsanity/Hacking Progress.md",
+    "Apple_Notes/Temp.md",
+    "Apple_Notes/Computational Methods.md",
+    "Apple_Notes/Ramdom Shit!!!.md",
+    "Apple_Notes/Networking.md",
+    "Attachments/SCR-20260304-tens.png",
+    "Attachments/SCR-20251224-pfpy.png",
+    "Attachments/SCR-20251224-ozpa.png",
+    "Apple_Notes/RUST.md",
+    "Attachments/SCR-20251231-qwvp.png",
+    "Attachments/SCR-20251231-quce.png",
+    "Apple_Notes/Semester 2 drive file..md",
+    "Apple_Notes/Verilog and VHDL..md",
+    "Apple_Notes/EPOCH AI AND ML.md",
+    "Apple_Notes/Building Blocks of Digital Circuits.md",
+    "Apple_Notes/HTML & CSS..md",
+    "Apple_Notes/Python.md",
+    "Apple_Notes",
+    "Apple Notes",
+    "mac_sanity/ObsidianInsanity/Random Note.md"
   ]
 }

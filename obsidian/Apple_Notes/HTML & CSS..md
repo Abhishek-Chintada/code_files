@@ -1,0 +1,87 @@
+(By BroCode.)
+- [ ] HTML is HyperText Markup Language.It is the basic building block of the Web. 
+- [ ] HTML adds structure to a web page.
+- [ ] CSS means cascading style sheets.
+- [ ] The doctype html tag is used to represent that the file represents a html file.
+- [ ] The whole program should be written inside a pair of html tags.
+- [ ] The head element contains the information about your webpage.
+- [ ] We can also add titles to the webpage.
+- [ ] We can similarly add body tags to the webpage.
+- [ ] The body element contains the visible content in your webpage.
+- [ ] We can add tags starting from h1.
+- [ ] H1 tags are much bigger in size. We may consider the number after the h as the priority number.
+- [ ] Paragraphs can be added between a pair of p tags.
+- [ ] The tag br represents a line break. It gives a line space in the web page.
+- [ ] Note that a line break tag has no closing tag.
+- [ ] The tag hr adds a horizontal line to the webpage. This tag also doesn’t need a closing tag.
+- [ ] Making the paragraph tag as pre instead of p makes the text preformatted and hence the webpage represents the lines as they are written in code.
+- [ ] <!— (comment body.) —> is the tag for the comment in the html code which do nothing to the webpage but are a note for the programmer.
+- [ ] We can also place hyperlinks in html. These are used to access websites or other stuff by clicking the provided link.
+- [ ] To add hyperlinks we will need a pair of a tags which means anchor.
+- [ ] We need to add an attribute to the a tag. The attribute is the name value pair which modifies the behaviour of an element.
+- [ ] Href attribute means hypertext link reference.
+- [ ] We can also add more attributes to the tags if we want to. If we take the attribute of target and set it to blank, then the href will open in a new tab.
+- [ ] The title attribute adds more info to be displayed about the element.
+- [ ] We can add both absolute and relative urls in the href attribute.
+- [ ] We can also add images to the webpage using html. We should use the img tag to do so.
+- [ ] We can add alternative text instead of the image to show up when the image could not load.
+- [ ] Screen readers generally read the alternative text instead of the image.
+- [ ] We can also add the a tag to the image tag.
+- [ ] We can add gif to the webpage as well.
+- [ ] We can similarly add audio to a html file.
+- [ ] We need to use the audio tag in order to do so.
+- [ ] We can add controls and autoplay options even for the audio files.
+- [ ] We can add videos to the html webpage even!
+- [ ] We should use the video tag to add a video to the webpage.
+- [ ] We can also add an image to the title bar of the webpage.
+- [ ] The image should be atleast 96 by 96 pixels for better clarity.
+- [ ] We need to add a link tag to do the above thing! The link tag adds a link to the webpage and an external file.
+- [ ] We can use tags to format the text inside the webpage.
+- [ ] Span element is an inline container used to group elements for styling purposes.
+- [ ] Div tag is a block container used for the same reason as the span.
+- [ ] We can demonstrate different lists in the html files.
+- [ ] There are three different types of lists: unordered, ordered and description lists.
+- [ ] <ul> is the tag for unordered list. The elements should start with the tag li and end with /li. We can also create nested lists I.e, a list within a list. 
+- [ ] <ol> is the tag for the ordered lists.same story as the unordered list.
+- [ ] In the description list we can add terms and add description of the element using the dt and the dd tags.
+- [ ] We use tr tag for table rows.
+- [ ] The tag th is used for the table header tags. Table header means a column.
+- [ ] The tag td is used for the table data.
+- [ ] We can also add the align attribute to the table row tag.
+- [ ] We can add the border attribute to the table tag.
+- [ ] The background colour attribute can be used to various tags.
+- [ ] We can create buttons using the button tags in html.
+- [ ] We need to use a tags to attach a hyperlink to attach to the button.
+- [ ] To create a form we need a pair of form tags.
+- [ ] The action attribute is used to send the submitted forms to a desired location or a file.
+- [ ] The method attribute has get and post options, the get option is used for non confidential data and the post option is used for confidential data.
+- [ ] To create a text input box in the form we need to use the self closing input tag.
+- [ ] We can use attribute type with the input tag.
+- [ ] We use the label tag to add a label to the input tag.
+- [ ] Note that the label tag is not self closing.
+- [ ] We can add the for attribute to the label tag.
+- [ ] The input tag with type as submit creates a submit button.
+- [ ] We can add the attribute required for data that is required to be submitted whatsoever before submitting.
+- [ ] We can also attributes as min length, 
+- [ ] We can also add reset button using the same method as the submit button.
+- [ ] We can use a placeholder to prompt the user about what to enter.
+- [ ] We can add the format in which we need to enter our phone number should be entered using the pattern attribute.
+- [ ] We can use the select and option tags for a drop down menu.
+- [ ] We can use the text area tags to add a comment to the form.
+- [ ] We can use the attribute type of file to accept files and to accept a specific type of files, we use the accept attribute.
+- [ ] If we send a large amount of data like images etc then we will have to use the attribute of enctype in the form tag and set it to multipart/form-data
+- [ ] We can use the header, main and footer tags to better organise our website using the html. Using these makes it easier to apply the css style sheets.
+- [ ] We can apply css in three different ways: in line, internal and external.
+- [ ] Inline styling means adding the style attribute to the paragraph or header tags.
+- [ ] Internal styling means adding the style tags inside the head tags.
+- [ ] External style sheets are the most popular methods as they are reusable.
+- [ ] We need to create an external css file and link it to the original html files by using the link tags and relationship, href attribute inside the header tag.
+- [ ] In the style sheet we can select specific elements of the html file and add the style elements to them using the curly braces.
+- [ ] We can use ids to further specify specific elements of the html file.
+- [ ] To refer to an element with the id in the style sheet we use the # symbol.
+- [ ] We can divide the tags into groups using the class attribute and add css property to the whole class combinedly.
+- [ ] To refer to a class in a style sheet we use the . Operator.
+- [ ] Note that we can apply the same style sheet to more than one html file.
+- [ ] For applying colours in html we can use the names of colours, rub values, hexadecimal values, and finally the hsl values.
+- [ ] We can also meddle with fonts in the style sheets of the html files by using the font-family attribute.
+- [ ] We can use the font size types of em or px.
