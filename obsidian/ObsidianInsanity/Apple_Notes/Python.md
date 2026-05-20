@@ -1,0 +1,57 @@
+CS50 & Dhruva
+
+- [ ] Python and java are object oriented programming(OOP) languages. In c we can only define structs but cannot associate functionality with that specific structure but in oop languages we can do so. When a function is associated with a specific structure then it is called a method.
+- [ ] For example to convert a string s to lower case we use the tolower(s) in c, where we are passing the string to the tolower() function. in python we can do so by using the s.lower() where the lower function is embedded with the string structure and we use the . Operator to go inside the structure and get the lower function.
+- [ ] The base code can be named as main and it can be called at the end of the program so that we need not define all the functions and methods before the main code implementation and avoid the bloody traceback errors.
+- [ ] Note that python does not allow the usage of do while loops but only has while loops.
+- [ ] In python we can actually use the else statement with the for loop whenever there is a break statement in the for loops body.
+- [ ] Instead of hash tables we have dictionary in python.
+- [ ] In python we have built in support for the csv files.
+- [ ] While opening files we can write rows to a csv file by using a writer function. 
+- [ ] Membership operators check if a value is present in a list or dictionary whereas the identity operators check whether the identity(id/memory space) of two variables is same.
+- [ ] Docstrings are always enclosed in triple quotes ("""...""" or '''...'''), which allows them to span multiple lines.
+- [ ] What happens when we run a program?
+- [ ] Compile time polymorphism happens by operator overloading and the run time polymorphism happens by overriding the methods in subclasses.
+- [ ] Overloading : same function name but different parameter count.
+- [ ] Overwrite: depends on the user input.
+- [ ] There are two relationships : ‘has a’ relation and ‘is a’ relationship.
+- [ ] A static method and class method does not have anything to do with a specific object of the class.(they are bound to the class.)
+- [ ] A class method should have at least a cls parameter whereas a static method may or may not have a parameter.
+- [ ] A class method cannot change its attributes whereas a static method can change its attributes
+- [ ] To call a function of a class we make an object and then call the function using the object.
+- [ ] We can directly call the static and class methods without the use of an object. This itself is a proof that the static and class methods do not have any relation with the objects of a class.
+- [ ] What are dunders and constructors.
+- [ ] Data classes are the boilerplates for data.(boilerplate -> wrapper type)
+
+# Object Oriented Programming in Python.
+
+- [ ] A class is a blueprint for objects and an object is an instance of a class.
+- [ ] For defining a class in python, we use the class keyword.
+- [ ] And also, we can define methods inside of a class and also the common attributes of the objects of the class.
+- [ ] Every class should have a special method named as the init method, in other languages it is called as the constructor.
+- [ ] This constructor constructs the objects of the class.
+- [ ] The name of the init module should be __init__ and the first argument refers to the name of the object that is created and the other arguments are the attributes of the named object.
+- [ ] Syntax is to be remembered.
+- [ ] After creating the class we can assign a variable as the object by equating it to the \[class name\](arguments list).
+- [ ] Similarly we can access the methods inside the class using the object_name.method_name()
+- [ ] Note that in python we do not need to pass in anything in place of the self in the arguments list.
+- [ ] Actually the init function is a dunder method. That is it is a double underscrolls method!
+- [ ] Apart from init we can define other dunder methods also. For instance, we cannot add two objects of a class simply using the + operand. We have to define a dunder in order to do so. By defining a dunder as __add__(self, other), we can actually define the + operand of the object.
+- [ ] Similarly by defining specific dunders we can define specific operands between the objects of a class.
+- [ ] To get something readable as output when we print the object directly we will have to use the dunder method of __str__ and the returned f string will be output in the terminal.
+- [ ] Without the str dunder we will get the memory address of the class when we print the object using the print statement.
+- [ ] We can also use the __repr__ dunder method and the output will be given when we use the repr(object_variable_name). Basically the string dunder methods output is intended to be understood by any general person and the repr output is meant for any other developer reading your code.
+- [ ] The function next(reader) is used to skip the first row.
+- [ ] But if we want our code to be more robust then we will have to use the dictreader which will take the first row value of the column as the key for the whole column.
+- [ ] If we use the dictreader we no longer need to use the next function.
+- [ ] We can use the function sorted in python to sort the dictionary based on alphabetical order. If not specified the dictionary is sorted in the order based on the original key of the dictionary but otherwise we can give the key based on which the sorting is to be done by using the key attribute inside the sorted function. If you want to reverse the default ordering use the reverse attribute and set it to True.
+- [ ] A relational database contains data which are related to each other in some or the other way.
+- [ ] Note that method overriding is the key for polymorphism.
+- [ ] An inheritance is like an is a relationship and a composition is a has a realitionship.
+- [ ] We can mask certain elements of an array of numpy using the mask function.([np.](http://np.ma)[ma](http://np.ma).)
+- [ ] Note that the slicing of series also slices the labels or the indices of the series also.
+- [ ] While defining a series with a dictionary the keys will be used as indices.
+- [ ] .describe, .info and .display give us info about the data frame (mathematical and statistical info).
+- [ ] While dealing with floating point numbers in numpy it is better to use linspace instead of the orange function.
+- [ ] We can explicitly define the data type of the numpy array by using the data type parameter inside the np functions.
+- [ ] Note that we can del keyword to delete elements from a normal python list but we cannot do the same to a numpy array.
