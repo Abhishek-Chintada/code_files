@@ -1,6 +1,11 @@
-#include <iostream>
+#include <cstdio>
 
 int main() {
-    std::cout << "Na Lavada" << std::endl;
-    return 0;
-#include "EndBrace.h"
+    int a = 10;
+    int n = 100;
+    for(int i = 0; i < n; i++) {
+        a = a + 1;
+        printf("%d , ", a);
+    }
+    printf("\n");
+}
