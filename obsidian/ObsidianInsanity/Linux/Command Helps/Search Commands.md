@@ -1,3 +1,0 @@
-1. which -> searches only the $PATH directory and is best used for finding the location of binary files. This command is widely used to find the reasons for the improper functioning of the programs or executables.
-2. locate -> this command is used to find the location of a file or a directory by sifting through the 'updatedb' database file. Note that we will not be able to find the files with the locate command if the file is not listed in the updatedb.
-3. find -> This is the most powerful searching command till date and the command searches the files that are inside a starting directory stated with the find command itself. It not only helps us find the files but also sort them and search them categorically with specifications even on the privileges etc.

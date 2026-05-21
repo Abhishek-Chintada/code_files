@@ -1,1 +1,0 @@
-Linear Algebra Done Right (Axler), Linear Algebra Done Wrong (Treil) and Matrix Analysis (Horn).
