@@ -1,4 +1,4 @@
-#include "simplestring.h"
+// #include "simplestring.h"
 #include <cstdio>
 #include <stdexcept>
 #include <cstring>
