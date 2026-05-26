@@ -20,5 +20,6 @@ int main(void) {
     printf("B\n");
     const auto* t4 = new Tracer{"Dynamic Variable"};
     printf("C\n");
+    delete t4;
     return 0;
 }
