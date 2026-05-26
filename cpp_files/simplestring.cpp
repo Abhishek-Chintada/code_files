@@ -9,6 +9,9 @@
         buffer = new char[max_size];
         buffer[0] = '\0';
     }
+    SimpleString::SimpleString(const SimpleString& other):max_size(other.max_size), buffer{new char [other.max_size]}, length{other.length}{
+        std::strncpy(buffer, other.buffer, max_size);
+    }
     bool SimpleString::append_character(char x) {
         if(length + 1 >= max_size) {
             throw std::range_error{"The buffer cannot afford to append the character."};

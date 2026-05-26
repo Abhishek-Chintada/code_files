@@ -4,6 +4,7 @@
 struct SimpleString {
     public:
         SimpleString(size_t max);
+        SimpleString(const SimpleString& other);
         ~SimpleString();
         bool append_character(char x);
         bool append_line(const char * line);
