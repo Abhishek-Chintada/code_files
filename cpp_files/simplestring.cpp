@@ -36,6 +36,9 @@
     void SimpleString::get_buffer() {
         printf("%s\n", buffer);
     }
+    SimpleString& SimpleString::operator=(const SimpleString& other) {
+        
+    }
     SimpleString::~SimpleString() {
         printf("%s is destructed...\n", buffer);
         delete[] buffer;
