@@ -11,19 +11,17 @@ struct Point {
     Point(int x, int y):x{x}, y{y} {
         printf("The Point has been created with the specified values for x and y\n");
     }
-    int get_x() {
+    int get_x() const {
             return x;
     }
-    int get_y() {
+    int get_y() const {
             return y;
     }
 };
 
-Point make_transpose(Point p) {
-    int temp = p.x;
-    p.x = p.y;
-    p.y = temp;
-    return p; 
+Point make_transpose(const Point p) {
+    Point result{p.get_y(), p.get_x()};
+    return result;
 }
 
 int main(void) {
