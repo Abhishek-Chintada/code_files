@@ -18,19 +18,39 @@ struct FileLogger : Logger {
 };
 
 struct Bank {
+    /*Constructor Injection
     Bank(Logger& input_logger) : logger{input_logger} {
         printf("The logger is set up for the bank successfully.\n");
     }
     void make_transfer(long from, long to, double amount) {
         logger.log_transfer(from, to, amount);
+    } 
+    private:
+        Logger& logger; */
+    void Bank_set_logger(Logger* input_logger) {
+        this->logger = input_logger;
+        printf("The logger pointer has been initialized (or) changed successfully.\n");
+    }
+    void make_transfer(long from, long to, double amount) {
+        // --snip--
+        logger->log_transfer(from, to, amount);
     }
     private:
-        Logger& logger;
+        Logger* logger = nullptr; // A property injection uses pointers instead of references like constructor injection.
 };
 
 int main(void) {
     ConsoleLogger cons_logger;
-    Bank bank(cons_logger);
-    bank.make_transfer(123456789, 987654321, 1000.0);
+    // Constructor Injection.
+    /*Bank bank(cons_logger);
+    bank.make_transfer(123456789, 987654321, 1000.0);*/
+    ConsoleLogger cons;
+    FileLogger fil;
+    Bank bank;
+    bank.Bank_set_logger(&cons); // set to console print.
+    bank.make_transfer(2351, 656867, 15153.154);
+    bank.Bank_set_logger(&fil);
+    bank.make_transfer(86984, 53462, 3585.234);
+    printf("The program executed successfully.\n");
     return 0;
 }
