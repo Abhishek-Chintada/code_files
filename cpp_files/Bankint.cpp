@@ -17,6 +17,12 @@ struct FileLogger : Logger {
     }
 };
 
+struct Lavada : Logger {
+    void log_transfer(long from, long to, double amount) override {
+        printf("Sanka Naaku.\n");
+    }
+};
+
 struct Bank {
     /*Constructor Injection
     Bank(Logger& input_logger) : logger{input_logger} {
@@ -46,11 +52,14 @@ int main(void) {
     bank.make_transfer(123456789, 987654321, 1000.0);*/
     ConsoleLogger cons;
     FileLogger fil;
+    Lavada lavada;
     Bank bank;
     bank.Bank_set_logger(&cons); // set to console print.
     bank.make_transfer(2351, 656867, 15153.154);
     bank.Bank_set_logger(&fil);
     bank.make_transfer(86984, 53462, 3585.234);
+    bank.Bank_set_logger(&lavada);
+    bank.make_transfer(54367, 435245, 46749.134);
     printf("The program executed successfully.\n");
     return 0;
 }
