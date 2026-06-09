@@ -1,13 +1,13 @@
 #include <cstdio>
-// Backup test is successful.!!!!
-int main(void)
-{
-    int a = 10;
-    int &b = a;
-    printf("The value : a->%d\nThe reference value : %d\n", a, b);
 
-    int c = 15;
-    b = c;
-    printf("The value : a->%d, b->%d\nThe reference value : %d\n", a, c, b);
+void add(int& target) {
+    target = target + 5;
+}
+
+int main(void) {
+    int a = 10;
+    printf("This is the value before the function : %d\n", a);
+    add(a);
+    printf("This is the value after function : %d\n", a);
     return 0;
 }
