@@ -52,5 +52,8 @@ int main(void) {
     const float val0[] {1, 2, 3, 4, 5};
     auto res0 = mean_static(val0, size_t(sizeof(val0)/sizeof(val0[0])));
     printf("This is the result of the mean cal 3 : %f\n", res0);
+    const char val1[] {'a', 'b', 'c', 'd', 'e'};
+    auto res1 = mean_static(val1, size_t(sizeof(val1)/sizeof(val1[0])));
+    printf("This is the result of the character array : %d\n", res1);
     return 0;
 }
