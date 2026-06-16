@@ -18,6 +18,7 @@ int mode(const int* values, size_t length) {
         }
     }
     int max{arr[0]};
+    modalNo = values[0];
     for(size_t i{1}; i < length; i++) {
         if(arr[i] > max) {
             modalNo = values[i];
@@ -27,7 +28,7 @@ int mode(const int* values, size_t length) {
 }
 
 int main(void) {
-    int arr[] {1, 2, 7, 4, 4, 9, 0, 2, 4, 3, 1, 7, 6, 6, 1, 10};
+    int arr[] {1, 2, 7, 4, 4, 9, 0, 2, 4, 3, 1, 7, 6, 6, 1, 10, 4};
     auto result = mode(arr, size_t(sizeof(arr)/sizeof(arr[0])));
     printf("This is the mode of the data set : %d.\n", result);
     return 0;
