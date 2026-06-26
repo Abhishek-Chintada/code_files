@@ -1,6 +1,3 @@
-import java.io.*;
-import java.util.*;
-
 // Fkn shit.
 
 public class classshit {
