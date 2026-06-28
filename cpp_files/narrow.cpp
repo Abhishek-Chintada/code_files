@@ -1,26 +1,28 @@
 #include <cstdio>
 #include <stdexcept>
 
-// This is the implementation of the narrow_cast template.
-
-template <typename To, typename From>
-To narrow_cast(From value) {
-    auto converted = static_cast<To>(value);
-    auto backwards = static_cast<From>(converted);
-    if(value != backwards) {
-        throw std::runtime_error("Exception : Value is Narrowed");
+template<typename To, typename From>
+struct NarrowCaster {
+    static To Caster(From var) {
+        To reVar = static_cast<To>(var);
+        From checkVar = static_cast<From>(reVar);
+        if(var == checkVar) {
+            printf("<conversion valid>\n");
+            return reVar;
+        } else {
+            throw std::runtime_error("<Exception : Narrowing done>");
+        }
     }
-    return converted;
-}
+};
 
 int main(void) {
-    float a = 46246.1234;
-    int b = 0;
+    double a = 1.23;
     try {
-        b = narrow_cast<int, float>(a);
-    } catch (std::exception& e) {
-        printf("%s\n", e.what());
+        printf("This is the og value : %lf\n", a);
+        auto x = NarrowCaster<int, double>::Caster(a);
+        printf("This is the int var : %d\n", x);
+    } catch(std::exception& err) {
+        printf("%s\n", err.what());
     }
-    printf("%d\n", b);
     return 0;
-}
+} 
