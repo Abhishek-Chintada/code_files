@@ -7,7 +7,7 @@ struct textFile {
     size_t bytes;
 };
 textFile read_text(const char* text) {
-    const char contents[] {"Sometimes the goat is you."};
+    const static char contents[] {"Sometimes the goat is you."};
     return textFile{
             true, 
             contents,
