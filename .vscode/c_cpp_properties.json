@@ -4,14 +4,14 @@
             "name": "Mac",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/Users/abhishekchintada/Desktop/pieceOfShit/hpc_hft/cuda_includes" 
+                "/Users/abhishekchintada/Desktop/pieceOfShit/hpc_hft/cuda_includes"
             ],
             "defines": [
                 "CUDACC"
             ],
             "compilerPath": "/usr/bin/clang",
             "cStandard": "c17",
-            "cppStandard": "c++17",
+            "cppStandard": "c++20",
             "intelliSenseMode": "macos-clang-arm64"
         }
     ],
