@@ -1,6 +1,7 @@
 #include <cstdio>
 #include <stdexcept>
-
+// an interface is just an abstract base class containing only pure virtual functions.
+// fkn shit.
 struct BaseClass{};
 struct DerivedClass : BaseClass {};
 bool are_belong_to_us(BaseClass& base) {
