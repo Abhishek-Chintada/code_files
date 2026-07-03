@@ -1,5 +1,5 @@
 #include <cstdio>
-
+// extension to the variadic templates.
 template<typename... Args>
 constexpr int sum(Args... args) {
    return (... + args); 
