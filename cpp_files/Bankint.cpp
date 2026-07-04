@@ -1,5 +1,5 @@
 #include <cstdio>
-// Test check on Kali
+// Test check on Arch
 struct Logger {
     virtual ~Logger() = default;
     virtual void log_transfer(long from, long to, double amount) = 0;
