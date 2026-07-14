@@ -28,7 +28,7 @@ void Histogram::ingest(const char* str) {
 }
 
 void Histogram::print() const {
-    printf("- ");
+    printf("-   ");
     for(size_t i{}; i < 26; i++) {
         printf("%c/%c | ", char(i+65), char(i+97));
     }
@@ -58,7 +58,7 @@ void Histogram::print() const {
 
 int main(void) {
     Histogram hist;
-    const char* str = "The misalignment is purely a string length issue. Your columns don't line up because you are printing strings of different lengths, expecting them to take up the same visual space";
+    const char* str = "and guess what the author just printed that histo horizontally, which is not much aura farming, but printing the histo verically does farm the aura as it is....!";
     hist.ingest(str);
     hist.print();
     return 0;
