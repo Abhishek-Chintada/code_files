@@ -1,34 +1,29 @@
-#include <cstdio>
-
-
-
+// services
 struct speedUpdate {
-    double speed_mps;
+    double velocity;
 };
-
 struct carDetected {
     double distance;
-    double speed_mps;
+    double velocity;
+};
+struct brakeCommand {
+    double timeToCollision;
 };
 
+// service bus
 struct serviceBus {
     void publish(const brakeCommand&);
     // --snip--
 };
 
-struct brakeCommand {
-    double time_before_collision;
-};
-
+// Auto Brake struct
 template<typename T>
 struct autoBrake {
     autoBrake(const T& publish);
-    void publish(const speedUpdate&);
-    void publish(const carDetected&);
+    void observe(const speedUpdate&);
+    void observe(const carDetected&);
+    // --snip--
     private:
     const T& publish;
 };
 
-int main(void) {
-    return 0;
-}
