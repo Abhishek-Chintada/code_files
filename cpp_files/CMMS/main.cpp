@@ -17,8 +17,7 @@ int main(void) {
     }
     std::cout << a << std::endl;
     std::cout << std::endl << b << std::endl;
-    blaze::DynamicVector<double, blaze::columnVector> ex(3);
-    std::cout << std::endl << ex << std::endl;
+    
     return 0;
 }
 

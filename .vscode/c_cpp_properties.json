@@ -13,6 +13,20 @@
             "cStandard": "c17",
             "cppStandard": "c++20",
             "intelliSenseMode": "macos-clang-arm64"
+        },
+        {
+            "name": "Arch Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "~/slanderishCode/pieceOfShit/hpc_hft/cuda_includes"
+            ],
+            "defines": [
+                "CUDACC"
+            ],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "linux-clang-x64"
         }
     ],
     "version": 4

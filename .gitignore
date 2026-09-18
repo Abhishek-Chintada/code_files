@@ -1,1 +1,7 @@
 cpp_files/executable
+# C/C++ Build directories
+build/
+out/
+# OS-specific compile commands
+compile_commands.json
+.cache/
