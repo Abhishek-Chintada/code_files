@@ -2,7 +2,9 @@
 #include "forward_elim.hpp"
 // contains mostly the test code.
 int main(void) {
-    size_t n = 3;
+    blaze::setNumThreads(8);
+    auto start = std::chrono::high_resolution_clock::now();
+    size_t n = 100;
     blaze::DynamicMatrix<double> a(n, n);
     blaze::DynamicVector<double, blaze::columnVector> b(n);
     // defining 'random' shit
@@ -15,13 +17,16 @@ int main(void) {
             a(i, j) = dist(gen);
         }
     }
-    std::cout << "Check" << std::endl << a << std::endl;
+    /*std::cout << "Check" << std::endl << a << std::endl;
     std::cout << std::endl << b << std::endl;
     auto [A_res, b_res] = forward_elimination_core<double, blaze::DynamicMatrix<double>, blaze::DynamicVector<double, blaze::columnVector>>(a, b, n);
     std::cout << "Og" << std::endl << a << std::endl;
     std::cout << std::endl << b << std::endl;
     std::cout << "res" << std::endl << A_res << std::endl;
-    std::cout << b_res << std::endl;
+    std::cout << b_res << std::endl;*/
+    auto end = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> duration = end - start;
+    std::cout << duration.count() << std::endl;
     return 0;
 }
 
