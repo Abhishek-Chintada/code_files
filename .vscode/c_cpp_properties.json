@@ -4,7 +4,9 @@
             "name": "Mac",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/Users/abhishekchintada/Desktop/pieceOfShit/hpc_hft/cuda_includes"
+                "/Users/abhishekchintada/Dev/pieceOfShit/hpc_hft/cuda_includes",
+                "/Users/abhishekchintada/Dev/Project_FEM/DeformativeMatter/cpp_source/blaze_essentials.hpp",
+                "/opt/homebrew/include"
             ],
             "defines": [
                 "CUDACC"
