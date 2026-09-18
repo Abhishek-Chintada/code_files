@@ -4,7 +4,7 @@
 int main(void) {
     size_t n = 3;
     blaze::DynamicMatrix<double> a(n, n);
-    blaze::DynamicVector<double> b(n);
+    blaze::DynamicVector<double, blaze::columnVector> b(n);
     // defining 'random' shit
     std::random_device rd;
     std::mt19937 gen(rd());
@@ -17,7 +17,9 @@ int main(void) {
     }
     std::cout << a << std::endl;
     std::cout << std::endl << b << std::endl;
-    
+    forward_elimination_core<double, blaze::DynamicMatrix<double>, blaze::DynamicVector<double, blaze::columnVector>>(a, b, n);
+    std::cout << a << std::endl;
+    std::cout << std::endl << b << std::endl;
     return 0;
 }
 
