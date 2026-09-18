@@ -15,11 +15,13 @@ int main(void) {
             a(i, j) = dist(gen);
         }
     }
-    std::cout << a << std::endl;
+    std::cout << "Check" << std::endl << a << std::endl;
     std::cout << std::endl << b << std::endl;
-    forward_elimination_core<double, blaze::DynamicMatrix<double>, blaze::DynamicVector<double, blaze::columnVector>>(a, b, n);
-    std::cout << a << std::endl;
+    auto [A_res, b_res] = forward_elimination_core<double, blaze::DynamicMatrix<double>, blaze::DynamicVector<double, blaze::columnVector>>(a, b, n);
+    std::cout << "Og" << std::endl << a << std::endl;
     std::cout << std::endl << b << std::endl;
+    std::cout << "res" << std::endl << A_res << std::endl;
+    std::cout << b_res << std::endl;
     return 0;
 }
 
