@@ -44,4 +44,28 @@ fn main() {
     let mut array0: [i32; 3] = [4, 5, 6];
     array0[2] = 10;
     println!("{}", array0[2]);
+
+    // Vectors -> these are dynamic i.e they are resizable , it also acts like a bloody stack.
+    let mut nums = vec![1, 2, 3];
+    nums.push(4);
+    println!("{:?}", nums);
+    nums.pop(); // takes out the last value of the vector.
+    println!("{:?}", nums);
+
+    let mut vec = Vec::new(); // vec! macro uses this.
+    vec.push("String");
+    vec.push("Test");
+    println!("{:?}", vec);
+    vec.reverse();   // xtremely cool shit.
+    println!("{:?}", vec);
+
+    let vect = Vec::<i32>::with_capacity(2);
+    println!("{}", vect.capacity());
+
+    let v: Vec<i32> = (0..5).collect();
+    println!("{:?}", v);
+
+    // slices shit -> slices cannot be stored directly into variables or cannot be passed as function arguments
+    let sv: &[i32] = &v[2..4]; // fat pointer!
+    println!("{:?}", sv);
 }
