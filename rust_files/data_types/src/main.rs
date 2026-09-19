@@ -66,6 +66,26 @@ fn main() {
     println!("{:?}", v);
 
     // slices shit -> slices cannot be stored directly into variables or cannot be passed as function arguments
-    let sv: &[i32] = &v[2..4]; // fat pointer!
+    let sv: &[i32] = &v[2..4];
     println!("{:?}", sv);
+
+    // A string will be allocated in the heap, is global and is not null terminated. It is UTF-8 encoded global string
+    let name = String::from("Taylor");
+    let course = "Rust".to_string();
+    let new_name = name.replace("Taylor", "Ty");
+    println!("{}", name);
+    println!("{}", course);
+    println!("{}", new_name);
+
+    // &str = "string slice" or "stir" ; string and string slice are very different!
+    let str1 = "hello";
+    let str0 = str1.to_string();
+    let str2 = &str0;
+    println!("{}", str1);
+    println!("{}", str0);
+    println!("{}", str2);
+    // A string slice does not allocate memory on the heap whereas a string does.
+    // can compare strings with == and !=
+    println!("{}", "ONE".to_lowercase() == "one"); // check!
+
 }

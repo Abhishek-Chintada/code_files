@@ -11,5 +11,9 @@ name = "hello"
 version = "0.1.0"
 
 [[package]]
+name = "string_shit"
+version = "0.1.0"
+
+[[package]]
 name = "variables"
 version = "0.1.0"
