@@ -1,5 +1,6 @@
 #include "build_essentials.h"
 #include "bubblesort.h"
+#include "insertionsort.h"
 
 #define SIZE 20
 
@@ -10,7 +11,8 @@ int main(void) {
         arr[i] = 1 + rand()%(50);
     }
     print_arr(arr, SIZE);
-    bubble_sort(arr, SIZE);
+    // bubble_sort(arr, SIZE);
+    insertion_sort(arr, SIZE);
     print_arr(arr, SIZE);
     return 0;
 }
