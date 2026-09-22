@@ -1,5 +1,7 @@
 cpp_files/executable
 codeforces/executable
+executable
+executable.*
 # C/C++ Build directories
 build/
 out/
