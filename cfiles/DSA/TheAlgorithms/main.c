@@ -3,7 +3,7 @@
 #define SIZE 10
 
 int main(void) {
-    srand(time(0));
+    srand((unsigned int)time(0));
     cArray input = {(int *)malloc(SIZE*sizeof(int)), SIZE};
     cArray result;
     for(int i = 0; i < input.size; i++) {
@@ -11,5 +11,8 @@ int main(void) {
     }
     print_arr(&input);
     result = bubble_sort(&input);
+    print_arr(&result);
+    free(input.core);
+    free(result.core);
     return 0;
 }

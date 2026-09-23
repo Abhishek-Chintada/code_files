@@ -4,8 +4,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
-#include "bubblesort.h"
 #include "array.h"
+#include "bubble_sort.h"
+#include "insertion_sort.h"
 
 void print_arr(cArray *arr) {
     printf("[ ");
