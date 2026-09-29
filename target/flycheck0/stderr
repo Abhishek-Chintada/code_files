@@ -1,1 +1,197 @@
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.01s
+   0.005091292s  INFO prepare_target{force=false package_id=data_types v0.1.0 (/Users/abhishekchintada/Dev/code_files/rust_files/data_types) target="data_types"}: cargo::core::compiler::fingerprint: fingerprint error for data_types v0.1.0 (/Users/abhishekchintada/Dev/code_files/rust_files/data_types)/Check { test: false }/TargetInner { name: "data_types", doc: true, ..: with_path("/Users/abhishekchintada/Dev/code_files/rust_files/data_types/src/main.rs", Edition2024) }
+   0.005227042s  INFO prepare_target{force=false package_id=data_types v0.1.0 (/Users/abhishekchintada/Dev/code_files/rust_files/data_types) target="data_types"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/abhishekchintada/Dev/code_files/target/debug/.fingerprint/data_types-d1792dcb4a4f7a07/bin-data_types`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.015542667s  INFO prepare_target{force=false package_id=data_types v0.1.0 (/Users/abhishekchintada/Dev/code_files/rust_files/data_types) target="data_types"}: cargo::core::compiler::fingerprint: fingerprint error for data_types v0.1.0 (/Users/abhishekchintada/Dev/code_files/rust_files/data_types)/Check { test: true }/TargetInner { name: "data_types", doc: true, ..: with_path("/Users/abhishekchintada/Dev/code_files/rust_files/data_types/src/main.rs", Edition2024) }
+   0.015549542s  INFO prepare_target{force=false package_id=data_types v0.1.0 (/Users/abhishekchintada/Dev/code_files/rust_files/data_types) target="data_types"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/abhishekchintada/Dev/code_files/target/debug/.fingerprint/data_types-eb41463ccbe753cd/test-bin-data_types`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.015721834s  INFO prepare_target{force=false package_id=hello v0.1.0 (/Users/abhishekchintada/Dev/code_files/rust_files/hello) target="hello"}: cargo::core::compiler::fingerprint: fingerprint error for hello v0.1.0 (/Users/abhishekchintada/Dev/code_files/rust_files/hello)/Check { test: false }/TargetInner { name: "hello", doc: true, ..: with_path("/Users/abhishekchintada/Dev/code_files/rust_files/hello/src/main.rs", Edition2024) }
+   0.015725584s  INFO prepare_target{force=false package_id=hello v0.1.0 (/Users/abhishekchintada/Dev/code_files/rust_files/hello) target="hello"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/abhishekchintada/Dev/code_files/target/debug/.fingerprint/hello-99eca56e1f9970d2/bin-hello`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.015896834s  INFO prepare_target{force=false package_id=hello v0.1.0 (/Users/abhishekchintada/Dev/code_files/rust_files/hello) target="hello"}: cargo::core::compiler::fingerprint: fingerprint error for hello v0.1.0 (/Users/abhishekchintada/Dev/code_files/rust_files/hello)/Check { test: true }/TargetInner { name: "hello", doc: true, ..: with_path("/Users/abhishekchintada/Dev/code_files/rust_files/hello/src/main.rs", Edition2024) }
+   0.015902875s  INFO prepare_target{force=false package_id=hello v0.1.0 (/Users/abhishekchintada/Dev/code_files/rust_files/hello) target="hello"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/abhishekchintada/Dev/code_files/target/debug/.fingerprint/hello-2153442e3ae9ca1c/test-bin-hello`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.016066875s  INFO prepare_target{force=false package_id=string_shit v0.1.0 (/Users/abhishekchintada/Dev/code_files/rust_files/string_shit) target="string_shit"}: cargo::core::compiler::fingerprint: fingerprint error for string_shit v0.1.0 (/Users/abhishekchintada/Dev/code_files/rust_files/string_shit)/Check { test: false }/TargetInner { name: "string_shit", doc: true, ..: with_path("/Users/abhishekchintada/Dev/code_files/rust_files/string_shit/src/main.rs", Edition2024) }
+   0.016070375s  INFO prepare_target{force=false package_id=string_shit v0.1.0 (/Users/abhishekchintada/Dev/code_files/rust_files/string_shit) target="string_shit"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/abhishekchintada/Dev/code_files/target/debug/.fingerprint/string_shit-3672c91d01344fd2/bin-string_shit`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.016287500s  INFO prepare_target{force=false package_id=string_shit v0.1.0 (/Users/abhishekchintada/Dev/code_files/rust_files/string_shit) target="string_shit"}: cargo::core::compiler::fingerprint: fingerprint error for string_shit v0.1.0 (/Users/abhishekchintada/Dev/code_files/rust_files/string_shit)/Check { test: true }/TargetInner { name: "string_shit", doc: true, ..: with_path("/Users/abhishekchintada/Dev/code_files/rust_files/string_shit/src/main.rs", Edition2024) }
+   0.016291042s  INFO prepare_target{force=false package_id=string_shit v0.1.0 (/Users/abhishekchintada/Dev/code_files/rust_files/string_shit) target="string_shit"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/abhishekchintada/Dev/code_files/target/debug/.fingerprint/string_shit-80ee875e6ee4e7e4/test-bin-string_shit`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.016460625s  INFO prepare_target{force=false package_id=variables v0.1.0 (/Users/abhishekchintada/Dev/code_files/rust_files/variables) target="variables"}: cargo::core::compiler::fingerprint: fingerprint error for variables v0.1.0 (/Users/abhishekchintada/Dev/code_files/rust_files/variables)/Check { test: false }/TargetInner { name: "variables", doc: true, ..: with_path("/Users/abhishekchintada/Dev/code_files/rust_files/variables/src/main.rs", Edition2024) }
+   0.016463584s  INFO prepare_target{force=false package_id=variables v0.1.0 (/Users/abhishekchintada/Dev/code_files/rust_files/variables) target="variables"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/abhishekchintada/Dev/code_files/target/debug/.fingerprint/variables-e21f1e6ae0b36568/bin-variables`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.016626709s  INFO prepare_target{force=false package_id=variables v0.1.0 (/Users/abhishekchintada/Dev/code_files/rust_files/variables) target="variables"}: cargo::core::compiler::fingerprint: fingerprint error for variables v0.1.0 (/Users/abhishekchintada/Dev/code_files/rust_files/variables)/Check { test: true }/TargetInner { name: "variables", doc: true, ..: with_path("/Users/abhishekchintada/Dev/code_files/rust_files/variables/src/main.rs", Edition2024) }
+   0.016629584s  INFO prepare_target{force=false package_id=variables v0.1.0 (/Users/abhishekchintada/Dev/code_files/rust_files/variables) target="variables"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/abhishekchintada/Dev/code_files/target/debug/.fingerprint/variables-26106243dc7c2099/test-bin-variables`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: <std::backtrace::Backtrace>::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+    Checking string_shit v0.1.0 (/Users/abhishekchintada/Dev/code_files/rust_files/string_shit)
+    Checking data_types v0.1.0 (/Users/abhishekchintada/Dev/code_files/rust_files/data_types)
+    Checking hello v0.1.0 (/Users/abhishekchintada/Dev/code_files/rust_files/hello)
+    Checking variables v0.1.0 (/Users/abhishekchintada/Dev/code_files/rust_files/variables)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.27s
