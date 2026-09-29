@@ -47,6 +47,12 @@ bool insertNode(Node *head, int val) {
     return false;
 }
 
+void err() {
+    std::cout << "Error inserting node" << std::endl;
+}
+
 int main(void) {
+    if(!insertNode(head, 1)) err();
+    if(!insertNode(head, 7)) err();
     return 0;
 }
