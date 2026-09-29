@@ -8,3 +8,4 @@ out/
 # OS-specific compile commands
 compile_commands.json
 .cache/target/
+target/
