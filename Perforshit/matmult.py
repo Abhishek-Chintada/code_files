@@ -1,7 +1,7 @@
 import sys, random
 from time import *
 
-n = 4096
+n = 4096  # with this number we need almost 6 hours to get the result!
 
 A = [[random.random() for row in range(n)]for col in range(n)]
 B = [[random.random() for row in range(n)]for col in range(n)]
