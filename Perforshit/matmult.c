@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <sys/time.h>
 // runtime about 1100 seconds
-#define n 4096
+#define n 1000
 double A[n][n];
 double B[n][n];
 double C[n][n];
