@@ -1,9 +1,6 @@
-#include <cstdio>
-
+#include <iostream>
+using namespace std;
 int main(void) {
-    int a = 10;
-    int b = 20;
-    int sum = a + b;
-    printf("%d\n",sum);
+    cout << "Boss ra luccha" << endl;
     return 0;
 }
