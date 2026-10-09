@@ -1,16 +1,19 @@
 # oops
 
-class Person:
-    number_of_people = 0  # class attribute
+class Math:
+    
+    @staticmethod
+    def add5(x):
+        return x + 5
 
-    def __init__(self, name):
-        self.name = name
-        Person.number_of_people += 1
+    @staticmethod
+    def add10(x):
+        return x + 10
 
-p1 = Person("tim")
-print(p1.number_of_people)
-p2 = Person("jill")
-print(p2.number_of_people)
-print(p1.number_of_people)
+    @staticmethod
+    def pr():
+        print("MG")
 
-print(f"this is for person : {Person.number_of_people}")
+print(Math.add5(5))
+print(Math.add10(5))
+Math.pr()
