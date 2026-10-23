@@ -101,5 +101,5 @@ int main(void) {
     delete_list(&list.head, &list.tail, &list.length);
     print_list(list.head);
     printf("<console> EOF\n");
-    return 0;
+    return 0; // testing shit out mate.
 }
