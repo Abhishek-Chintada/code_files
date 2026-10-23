@@ -14,5 +14,8 @@ int main(void) {
     constexpr vector<double> a {1.2, 6.5, 9.2};
     constexpr double res = sum(a);
     cout << res << endl;
-    return 0;
+    cout << "Labbe" << endl;
+    int main(void) {
+
+    }
 }
