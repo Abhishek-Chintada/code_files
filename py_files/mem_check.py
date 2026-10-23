@@ -1,5 +1,6 @@
-import numpy as np
-import pandas as pd
+number1 = input("enter a number : ")
+number2 = input("enter another number : ")
 
-ls = [1, 2, 3]
-print(ls)
+concat = number1 + number2
+
+print(concat)
