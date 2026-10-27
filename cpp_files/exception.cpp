@@ -26,7 +26,7 @@ int main(void) {
 
     // special exceptional handler.
     try {
-        throw 'z'; // not advisable to do.
+        throw 'z'; // all hail na lavada.
     } catch (...) {
         printf("Here, any exception can be handled this way but it is not advisable to do.\n");
         printf("This will give rise to a major cyber security issue and bug bounty possibly.!\n");

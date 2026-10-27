@@ -9,5 +9,7 @@ auto hehe(X x, Y y) -> decltype(x + y) {
 
 int main(void) {
     auto res = hehe(double(12), int(2));
+    printf("Endhi ra luccha\n");
+    
     return 0;
 }

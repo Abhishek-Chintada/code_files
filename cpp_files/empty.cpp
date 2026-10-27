@@ -8,6 +8,7 @@ int main(void) {
         func();
     } catch(std::bad_function_call& e) {
         printf("%s\n", e.what());
+        
     }
     return 0;
 }
