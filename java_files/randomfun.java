@@ -1,14 +1,16 @@
-import java.util.Random;
+import java.util.*;
+
 public class randomfun {
+
     public static void main(String[] args) {
-        Random random = new Random();
-        int myrandomnumber;
-        myrandomnumber = random.nextInt();
-        System.out.println(myrandomnumber);
-        myrandomnumber = random.nextInt(1000); // 0 - 999
-        System.out.println(myrandomnumber);
-        //shifting !
-        myrandomnumber = random.nextInt(1000) + 1;
-        System.out.println(myrandomnumber); // 1 - 1000
-    } // end main
+        Scanner in = new Scanner(System.in);
+        double[][] a;
+        a = new double[10][10];
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                System.out.printf(
+                    "This is the %dth row and %dth column element : %f\n", i, j, a[i][j]);
+            }
+        }
+    }
 }
