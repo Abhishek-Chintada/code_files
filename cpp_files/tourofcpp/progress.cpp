@@ -1,28 +1,32 @@
 #include <bits/stdc++.h>
-// tests -> 1.8
 using namespace std;
 
-bool accept() {
-    cout << "Do you want to proceed? (y or n)\n";
-    char answer = 0;
-    cin >> answer;
-    switch(answer) {
-        case 'y': return true;
-        case 'n': return false;
-        default : cout << "I'll take that as a no.\n"; return false;
-    }
+struct Vector {
+    int sz;
+    double *elem;
+};
+
+void vector_init(Vector &v, int s) {
+    v.elem = new double[s];
+    v.sz = s;
 }
 
-bool check(int x) {
-    if(int val = x; val != 0) {
-        return true;
-    } else return false;
+double read_and_sum(int s) {
+    Vector v;
+    vector_init(v, s);
+
+    for(int i = 0; i < s; i++) {
+        cin >> v.elem[i];
+    }
+    double sum = 0;
+    for(int i = 0; i < s; i++) {
+        sum += v.elem[i];
+    }
+    return sum;
 }
 
 int main(void) {
-    int a = 10;
-    int b = 0;
-    if(check(a)) cout << "a is good" << endl;
-    if(check(b)) cout << "b is good" << endl;
+    double s = read_and_sum(3);
+    cout << "This is the sum of elements of vector : " << s << endl;
     return 0;
 }
