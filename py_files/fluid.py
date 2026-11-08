@@ -21,13 +21,13 @@ ax.set_xlim(-1, 10)
 ax.set_ylim(-8, 5)
 ax.set_xlabel('x-coordinate')
 ax.set_ylabel('y-coordinate')
-ax.set_title('Fluid Kinematics: Evolution of Streamline, Pathline, and Streakline')
+ax.set_title('Fluid Dynamics Evolution Metrics')
 ax.grid(True, linestyle='--', alpha=0.6)
 
 # Initialize plot objects (empty data to start)
-stream_line, = ax.plot([], [], 'b-', linewidth=2, label='Streamline (snapshot at current t)')
-path_line,   = ax.plot([], [], 'r--', linewidth=2, label=f'Pathline (particle at {x0},{y0} at t={t0})')
-streak_line, = ax.plot([], [], 'g-.', linewidth=2, label=f'Streakline (particles passing {x0},{y0})')
+stream_line, = ax.plot([], [], 'b-', linewidth=2, label='Streamline')
+path_line,   = ax.plot([], [], 'r--', linewidth=2, label=f'Pathline')
+streak_line, = ax.plot([], [], 'g-.', linewidth=2, label=f'Streakline')
 point,       = ax.plot([x0], [y0], 'ko', markersize=6, label=f'Origin Point ({x0}, {y0})')
 
 time_text = ax.text(0.05, 0.95, '', transform=ax.transAxes, fontsize=12,
