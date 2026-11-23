@@ -1,2 +1,2 @@
 CompileFlags:
-  Add: [-I/opt/homebrew/include/plplot]
+  Add: [-I/opt/homebrew/include/plplot], []

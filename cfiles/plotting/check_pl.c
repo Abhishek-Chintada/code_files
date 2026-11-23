@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <plplot.h>
+#include <plplot/plplot.h> // arch_linux
+// #include <plplot.h> // mac_m4
 
 int main(void) {
     PLFLT x[101], y[101];
